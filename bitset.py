@@ -27,6 +27,7 @@ class BitSet:
         else:
             self._arr = [0] * size
         self._size = size
+        self._count = sum(self._arr)
     
     @staticmethod
     def decimal_to_binary(num, size):
@@ -48,18 +49,22 @@ class BitSet:
             for ind, value in enumerate(self._arr):
                 if value == 0:
                     self._arr[ind] = 1
-        else:
+            self._count = self._size
+        elif not self._arr[-(index+1)]:
             self._arr[-(index+1)] = 1
+            self._count += 1
     
     def reset(self, index=None) -> None:
         if index and index >= self.size():
             raise IndexError(f"Index out of bound: {index}")
         if index is None:
             for ind, value in enumerate(self._arr):
-                if value == 0:
+                if value == 1:
                     self._arr[ind] = 0
-        else:
-            self._arr[-(index+1)] = 0
+            self._count = 0
+        elif self._arr[-(index+1)]:
+            self._arr[-(index+1)] = 1
+            self._count -= 1
     
     def flip(self, index=None) -> None:
         if index and index >= self.size():
@@ -67,11 +72,16 @@ class BitSet:
         if index is None:
             for ind, value in enumerate(self._arr):
                 self._arr[ind] = 1 - value
+            self._count = self._size - self._count
         else:
+            if self._arr[-(index+1)]:
+                self._count -= 1
+            else:
+                self._count += 1
             self._arr[-(index+1)] = 1 - self._arr[-(index+1)]
     
     def count(self) -> int:
-        return sum(self._arr)
+        return self._count
 
     def test(self, index) -> bool:
         if index >= self.size():
