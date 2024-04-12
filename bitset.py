@@ -28,7 +28,7 @@ class BitSet:
             self._arr = [0] * size
         self._size = size
         self._count = sum(self._arr)
-    
+
     @staticmethod
     def decimal_to_binary(num, size):
         res = ""
@@ -39,54 +39,57 @@ class BitSet:
             res += "0"
         return list(map(int, res[::-1]))
 
+    @staticmethod
+    def _get_index(index):
+        return -(index+1)
+
     def size(self) -> int:
         return self._size
 
-    def set(self, index=None) -> None:
+    def count(self) -> int:
+        return self._count
+    
+    def _validate_index(self, index):
         if index and index >= self.size():
             raise IndexError(f"Index out of bound: {index}")
+
+    def set(self, index=None) -> None:
+        self._validate_index(index)
         if index is None:
             for ind, value in enumerate(self._arr):
                 if value == 0:
                     self._arr[ind] = 1
             self._count = self._size
-        elif not self._arr[-(index+1)]:
-            self._arr[-(index+1)] = 1
+        elif not self._arr[BitSet._get_index(index)]:
+            self._arr[BitSet._get_index(index)] = 1
             self._count += 1
     
     def reset(self, index=None) -> None:
-        if index and index >= self.size():
-            raise IndexError(f"Index out of bound: {index}")
+        self._validate_index(index)
         if index is None:
             for ind, value in enumerate(self._arr):
                 if value == 1:
                     self._arr[ind] = 0
             self._count = 0
-        elif self._arr[-(index+1)]:
-            self._arr[-(index+1)] = 1
+        elif self._arr[BitSet._get_index(index)]:
+            self._arr[BitSet._get_index(index)] = 0
             self._count -= 1
     
     def flip(self, index=None) -> None:
-        if index and index >= self.size():
-            raise IndexError(f"Index out of bound: {index}")
+        self._validate_index(index)
         if index is None:
             for ind, value in enumerate(self._arr):
                 self._arr[ind] = 1 - value
             self._count = self._size - self._count
         else:
-            if self._arr[-(index+1)]:
-                self._count -= 1
-            else:
-                self._count += 1
-            self._arr[-(index+1)] = 1 - self._arr[-(index+1)]
-    
-    def count(self) -> int:
-        return self._count
+            actual_index = BitSet._get_index(index)
+            self._count += (1 if self._arr[actual_index] else -1)
+            self._arr[actual_index] = 1 - self._arr[actual_index]
 
     def test(self, index) -> bool:
         if index >= self.size():
             raise IndexError(f"Index out of bound: {index}")
-        return bool(self._arr[-(index+1)])
+        return bool(self._arr[BitSet._get_index(index)])
 
     def any(self) -> bool:
         return self.count() > 0
@@ -106,7 +109,7 @@ class BitSet:
 
 # example usage
 if __name__ == '__main__':
-    bs = BitSet(5, "1011")
+    bs = BitSet(5, "11111")
     print(bs)
     print(bs.any())
     print(bs.all())
