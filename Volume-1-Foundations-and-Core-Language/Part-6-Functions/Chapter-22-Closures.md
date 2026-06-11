@@ -1,4 +1,4 @@
-# Chapter 21 — Closures
+# Chapter 22 — Closures
 
 ---
 
@@ -963,10 +963,10 @@ This keeps state scoped to the returned function.
 This chapter builds on:
 
 ```text
-Chapter 19:
+Chapter 20:
 Functions are objects and can be returned.
 
-Chapter 20:
+Chapter 21:
 Nested functions can access enclosing scope.
 
 Chapter 10:
@@ -1356,7 +1356,7 @@ Closures are the result of functions plus lexical scope.
 
 ---
 
-# Preview of Chapter 22
+# Preview of Chapter 23
 
 Next we study the call stack.
 
@@ -1370,4 +1370,4 @@ The call stack explains active calls:
 * How recursion works
 * How tracebacks represent call history
 
-Chapter 22 will complete Volume II's execution model for functions.
+Chapter 23 will complete Volume I's execution model for functions.

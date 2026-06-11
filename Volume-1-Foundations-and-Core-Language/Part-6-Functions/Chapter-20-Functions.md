@@ -1,4 +1,4 @@
-# Chapter 19 — Functions
+# Chapter 20 — Functions
 
 ---
 
@@ -477,7 +477,7 @@ raises:
 NameError
 ```
 
-Detailed scope rules are Chapter 20.
+Detailed scope rules are Chapter 21.
 
 For now:
 
@@ -584,7 +584,7 @@ a frame
 module frame
 ```
 
-The call stack will be covered more deeply in Chapter 22.
+The call stack will be covered more deeply in Chapter 23.
 
 For now, understand:
 
@@ -1674,7 +1674,7 @@ Functions are where objects, names, expressions, and control flow become reusabl
 
 ---
 
-# Preview of Chapter 20
+# Preview of Chapter 21
 
 Next we study scope.
 
@@ -1682,7 +1682,7 @@ Functions create local names.
 
 But Python programs also have global names, built-in names, and eventually enclosing names.
 
-Chapter 20 will answer:
+Chapter 21 will answer:
 
 * Where does Python look for a name?
 * What is local scope?

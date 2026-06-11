@@ -22,7 +22,7 @@ By the end of this chapter, you should understand:
 * How encoding and decoding connect text to bytes.
 * Common mistakes with strings, identity, mutation, and formatting.
 
-This chapter continues Volume II by studying text as Python objects.
+This chapter continues Part IV of Volume I by studying text as Python objects.
 
 The core model remains:
 

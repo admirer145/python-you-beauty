@@ -42,31 +42,57 @@ Operators
 ↓
 Expressions
 ↓
-Control Flow
+Conditionals
 ↓
-Functions
+Loops
 ↓
-Data Structures
+Function Objects
+↓
+Parameters and Arguments
+↓
+Scope and Namespaces
+↓
+Closures
+↓
+Call Stack and Stack Frames
+↓
+Recursion
+↓
+Functional Programming
+↓
+Built-in Data Structures
+↓
+Comprehensions
+↓
+Specialized Data Structures
 ↓
 Custom Data Structures
 ↓
+Stack vs Heap
+↓
+Reference Counting
+↓
+Garbage Collection
+↓
 Object Lifecycle
+↓
+Weak References
 ↓
 Modules and Imports
 ↓
-Classes
+Virtual Environments
+↓
+Classes and Instances
 ↓
 Attributes and Methods
 ↓
-Dunder Methods
+Encapsulation and Managed Attributes
 ↓
-Operator Overloading
+Composition
 ↓
 Inheritance and Method Overriding
 ↓
 MRO and `super()`
-↓
-Composition
 ↓
 Polymorphism
 ↓
@@ -74,9 +100,19 @@ Duck Typing
 ↓
 ABCs and Mixins
 ↓
+Dataclasses
+↓
+Dunder Methods
+↓
+Operator Overloading
+↓
 Descriptors
 ↓
-Properties
+Properties, Static Methods, and Class Methods
+↓
+`__slots__`
+↓
+Metaclasses
 ↓
 Iterators
 ↓
@@ -86,23 +122,57 @@ Context Managers
 ↓
 Decorators
 ↓
-Concurrency
+Exceptions
 ↓
-CPython Object Model and Attribute Lookup
+Files and Serialization
 ↓
-`__slots__`
+Standard Library
 ↓
-Weak References
+Concurrency Foundations
 ↓
-Metaclasses
+Threads, Processes, and the GIL
+↓
+Asyncio and Event Loops
+↓
+Runtime Type System
+↓
+Bytecode Internals
+↓
+CPython Architecture
+↓
+C Extensions
 ↓
 Testing
 ↓
 Mocking and Monkey Patching
 ↓
+Debugging
+↓
+Logging
+↓
+Packaging
+↓
+Type Hints
+↓
 Static Type Checking
 ↓
 Profiling
+↓
+Design Patterns
+↓
+SOLID Principles
+↓
+Architecture
+↓
+APIs
+↓
+Microservices
+↓
+Ecosystem Frameworks and Libraries
+↓
+Career Specialization
+↓
+Capstone Projects
 
 ---
 
@@ -160,38 +230,44 @@ Mastery
 ## 5. Volume Order
 
 Volume I
-Foundations and Understanding Python
+Foundations and Core Language
 
 Volume II
-Core Language
+Advanced Python and Internals
 
 Volume III
-Data Structures and Memory
-
-Volume IV
-Program Organization and OOP
-
-Volume V
-Pythonic Abstractions
-
-Volume VI
-Robust and Concurrent Programs
-
-Volume VII
-CPython Internals
-
-Volume VIII
 Software Engineering
 
-Volume IX
-Python Ecosystem
+Volume IV
+Ecosystem and Career Paths
 
-Volume X
-Career Paths
+Capstone Projects
+Applied synthesis after the required foundations are in place.
 
 ---
 
-## 6. Rule Against Deflection
+## 6. Structural Decision
+
+Use the four-volume structure as the primary book structure.
+
+Volume I should be part-wise because it has the densest dependency chain and the highest risk of confusing learners if topics are grouped too broadly.
+
+Volume II should group advanced Python by conceptual mechanism:
+
+* Object-oriented Python
+* Python data model
+* Pythonic abstractions
+* Robust programs and I/O
+* Concurrency and parallelism
+* Type system and internals
+
+Volume III should focus on production engineering practice.
+
+Volume IV should focus on ecosystems, domains, and career paths.
+
+---
+
+## 7. Rule Against Deflection
 
 Do not skip chapters.
 
@@ -203,7 +279,7 @@ Maintain strict dependency order.
 
 ---
 
-## 7. Final Objective
+## 8. Final Objective
 
 A learner completing the curriculum should understand:
 

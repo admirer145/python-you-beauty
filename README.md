@@ -1,4 +1,4 @@
-# Python Mastery
+# Python: From First Principles to Professional Engineering
 
 > A complete first-principles journey into Python, CPython internals, software engineering, and the Python ecosystem.
 
@@ -37,7 +37,9 @@ The curriculum follows strict dependency order and avoids unexplained magic.
 
 # Book Structure
 
-## Volume I — Foundations and Understanding Python
+## Volume I — Foundations and Core Language
+
+Volume I builds the complete mental model required before advanced Python feels natural. It starts below Python, moves through execution, objects, references, primitive types, control flow, functions, data structures, memory behavior, and finally modules/imports.
 
 ### Part I — Foundations of Computing
 
@@ -60,127 +62,186 @@ The curriculum follows strict dependency order and avoids unexplained magic.
 11. Mutability
 12. Identity, Equality, and Memory Diagrams
 
----
-
-## Volume II — Core Language
+### Part IV — Primitive Types and Expressions
 
 13. Numbers
 14. Strings
 15. Booleans
 16. Operators
 17. Expressions
-18. Control Flow
-19. Functions
-20. Scope
-21. Closures
-22. Call Stack
+
+### Part V — Control Flow
+
+18. Conditionals
+19. Loops
+
+### Part VI — Functions
+
+20. Functions, Parameters, and Return Values
+21. Scope and Namespaces
+22. Closures
+23. Call Stack and Stack Frames
+24. Recursion
+25. Functional Programming
+
+### Part VII — Data Structures
+
+26. Lists
+27. Tuples
+28. Dictionaries
+29. Sets
+30. Comprehension Patterns
+31. `deque`, `heapq`, and `bisect`
+32. Custom Data Structures
+
+### Part VIII — Memory Management
+
+33. Stack vs Heap
+34. Reference Counting
+35. Garbage Collection
+36. Object Lifecycle
+37. Weak References
+
+### Part IX — Modules and Imports
+
+38. Modules
+39. Packages
+40. Import System
+41. Namespaces
+42. Virtual Environments
 
 ---
 
-## Volume III — Data Structures and Memory
+## Volume II — Advanced Python and Internals
 
-23. Lists
-24. Tuples
-25. Dictionaries
-26. Sets
-27. Custom Data Structures
-28. Stack vs Heap
-29. Reference Counting
-30. Garbage Collection
-31. Object Lifecycle and Weak References
+Volume II moves from using Python correctly to understanding Python's advanced protocols, object model, runtime behavior, and implementation mechanics.
 
----
+### Part I — Object-Oriented Python
 
-## Volume IV — Program Organization and OOP
+43. Classes and Instances
+44. Attributes and Methods
+45. Encapsulation and Managed Attributes
+46. Composition
+47. Inheritance and Method Overriding
+48. MRO and `super()`
+49. Polymorphism and Duck Typing
+50. ABCs and Mixins
+51. Dataclasses
 
-32. Modules
-33. Packages
-34. Imports and Namespaces
-35. Virtual Environments
-36. Classes and Instances
-37. Attributes and Methods
-38. Encapsulation and Managed Attributes
-39. Composition
-40. Inheritance and Method Overriding
-41. MRO and `super()`
-42. Polymorphism, Duck Typing, ABCs, and Mixins
+### Part II — The Python Data Model
 
----
+52. Dunder Methods
+53. Operator Overloading
+54. Descriptors
+55. Properties, Static Methods, and Class Methods
+56. `__slots__`
+57. Metaclasses
 
-## Volume V — Pythonic Abstractions
+### Part III — Pythonic Abstractions
 
-43. Dunder Methods and the Python Data Model
-44. Operator Overloading
-45. Descriptors
-46. Properties, Static Methods, and Class Methods
-47. Iterators and Iterables
-48. Generators
-49. Context Managers
-50. Decorators
+58. Iterators
+59. Generators
+60. Context Managers
+61. Decorators
 
----
+### Part IV — Robust Programs and I/O
 
-## Volume VI — Robust and Concurrent Programs
+62. Exceptions
+63. Files and Serialization
+64. Standard Library Deep Dive
 
-* Exceptions
-* Threads
-* Processes
-* Asyncio
-* GIL
+### Part V — Concurrency and Parallelism
 
----
+65. Concurrency Foundations
+66. Threads, Processes, and the GIL
+67. Asyncio and Event Loops
 
-## Volume VII — CPython Internals
+### Part VI — Type System and Internals
 
-* Bytecode
-* `dis` module
-* Object model
-* Attribute lookup
-* Descriptor internals
-* Instance layout, `__dict__`, and `__slots__`
-* Weak references
-* Class creation and metaclasses
-* Memory model
-* Interpreter internals
+68. Runtime Type System
+69. Bytecode Internals
+70. CPython Architecture
+71. C Extensions
 
 ---
 
-## Volume VIII — Software Engineering
+## Volume III — Software Engineering
 
-* Testing
-* Mocking and monkey patching
-* Logging
-* Type Hints
-* Static type checking
-* Profiling
-* Packaging
-* Linting
-* Documentation
+Volume III turns Python knowledge into production engineering practice.
 
----
-
-## Volume IX — Python Ecosystem
-
-* Flask
-* Django
-* FastAPI
-* NumPy
-* Pandas
-* Polars
-* PyTorch
-* TensorFlow
-* AI Engineering
+72. Testing
+73. Mocking and Monkey Patching
+74. Debugging
+75. Logging
+76. Packaging
+77. Type Hints
+78. Static Type Checking
+79. Profiling
+80. Design Patterns
+81. SOLID Principles
+82. Architecture
+83. APIs
+84. Microservices
 
 ---
 
-## Volume X — Career Paths
+## Volume IV — Ecosystem and Career Paths
 
-* Backend Engineering
-* Data Engineering
-* ML Engineering
-* AI Engineering
-* DevOps
-* Cybersecurity
+Volume IV connects Python mastery to real-world domains, frameworks, libraries, and professional specialization paths.
+
+### Part I — Web Development
+
+85. Flask
+86. Django
+87. FastAPI
+
+### Part II — Data and Scientific Computing
+
+88. NumPy
+89. Pandas
+90. Polars
+91. SciPy
+
+### Part III — Machine Learning and AI Engineering
+
+92. scikit-learn
+93. PyTorch
+94. TensorFlow
+95. AI Engineering
+96. RAG Systems
+97. Agents
+
+### Part IV — Automation and Integration
+
+98. APIs and Automation
+99. Scripting for Real Workflows
+
+### Part V — Career Paths
+
+100. Backend Engineering
+101. Data Engineering
+102. Machine Learning Engineering
+103. AI Engineering
+104. DevOps
+105. Cybersecurity
+
+---
+
+# Capstone Projects
+
+Capstones are placed after the learner has the prerequisites needed to build them properly. They should reinforce the book instead of acting as disconnected exercises.
+
+* Todo CLI
+* File Organizer
+* REST API
+* URL Shortener
+* ORM
+* Task Queue
+* Mini Redis
+* Mini Web Framework
+* Mini Event Loop
+* Toy Python Interpreter
+* Distributed Scheduler
 
 ---
 

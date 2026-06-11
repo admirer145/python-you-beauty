@@ -1,4 +1,4 @@
-# Chapter 22 — Call Stack
+# Chapter 23 — Call Stack
 
 ---
 
@@ -928,23 +928,23 @@ Clear functions are usually worth the small overhead.
 
 # Concept Connections
 
-This chapter completes Volume II's function execution model:
+This chapter completes Volume I's function execution model:
 
 ```text
-Chapter 19:
+Chapter 20:
 Functions create frames when called.
 
-Chapter 20:
+Chapter 21:
 Frames contain local scopes.
 
-Chapter 21:
+Chapter 22:
 Closures can retain data beyond active frames.
 
-Chapter 22:
+Chapter 23:
 The call stack organizes active frames.
 ```
 
-It prepares Volume III:
+It prepares the data structures part:
 
 ```text
 Lists:
@@ -1350,42 +1350,35 @@ return value or exception
 pop or unwind frame
 ```
 
-The call stack completes the execution model for Volume II.
+The call stack completes the function execution model for Volume I.
 
 ---
 
-# Preview of Volume III — Data Structures and Memory
+# Preview of Part VII — Data Structures
 
-Volume II taught the core language:
+Part VI taught how Python organizes reusable behavior:
 
-* Numbers
-* Strings
-* Booleans
-* Operators
-* Expressions
-* Control flow
 * Functions
 * Scope
 * Closures
 * Call stack
 
-Next, Volume III studies data structures and memory:
+Next, Part VII studies data structures:
 
 * Lists
 * Tuples
 * Dictionaries
 * Sets
-* Stack vs heap
-* Reference counting
-* Garbage collection
+* Comprehension patterns
+* `deque`, `heapq`, and `bisect`
+* Custom data structures
 
 The transition is direct:
 
 ```text
 functions operate on objects
 objects are organized in data structures
-data structures live in memory
-memory behavior affects real programs
+data structures shape how programs store and access information
 ```
 
 We now have enough language foundation to study Python's core containers deeply.

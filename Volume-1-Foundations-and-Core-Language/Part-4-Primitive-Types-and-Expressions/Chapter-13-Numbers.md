@@ -21,7 +21,7 @@ By the end of this chapter, you should understand:
 * How to choose the right numeric type for common tasks.
 * Common mistakes with division, rounding, precision, and equality.
 
-This chapter begins Volume II.
+This chapter begins Part IV of Volume I.
 
 The key shift is important:
 

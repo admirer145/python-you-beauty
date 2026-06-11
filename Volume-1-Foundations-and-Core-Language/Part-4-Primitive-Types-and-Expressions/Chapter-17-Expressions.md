@@ -1890,27 +1890,28 @@ Expressions are the value-producing layer of Python code.
 
 # Preview of Chapter 18
 
-Next we study control flow.
+Next we study conditionals.
 
 Expressions produce values.
 
-Control flow decides which code runs and how often.
+Conditionals use expression results to decide which branch of code runs.
 
 We will study:
 
 * `if`
 * `elif`
 * `else`
-* `while`
-* `for`
-* `break`
-* `continue`
-* `range`
-* Branching
-* Loop reasoning
+* Truthiness in conditions
+* Branch ordering
+* Nested conditionals
+* Guard conditions
+* Conditional expressions
+* Pattern matching with `match`
 
 The connection is direct:
 
 ```text
 condition expression -> truthiness -> control-flow decision
 ```
+
+After conditionals, Chapter 19 will study loops: repeated execution with `while`, `for`, `range`, `break`, `continue`, and nested iteration.

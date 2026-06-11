@@ -1,4 +1,4 @@
-# Chapter 20 — Scope
+# Chapter 21 — Scope
 
 ---
 
@@ -37,7 +37,7 @@ In Chapter 10, we learned:
 names refer to objects
 ```
 
-In Chapter 19, we learned:
+In Chapter 20, we learned:
 
 ```text
 function calls create frames with local names
@@ -268,7 +268,7 @@ It is in the enclosing function scope: `outer`.
 
 This is the foundation of closures.
 
-Closures are Chapter 21.
+Closures are Chapter 22.
 
 For now, understand:
 
@@ -703,7 +703,7 @@ assign to count from the nearest enclosing function scope
 
 This is closure-related.
 
-Chapter 21 will explain it properly.
+Chapter 22 will explain it properly.
 
 For now, know:
 
@@ -1108,7 +1108,7 @@ This chapter builds on:
 Chapter 10:
 Names refer to objects through bindings.
 
-Chapter 19:
+Chapter 20:
 Function calls create frames with local names.
 
 Chapter 17:
@@ -1532,7 +1532,7 @@ Scope is the name-resolution layer of Python execution.
 
 ---
 
-# Preview of Chapter 21
+# Preview of Chapter 22
 
 Next we study closures.
 

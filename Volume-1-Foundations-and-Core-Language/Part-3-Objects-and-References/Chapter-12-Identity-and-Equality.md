@@ -2323,32 +2323,30 @@ This model will be used throughout the rest of the book.
 
 ---
 
-# Preview of Volume II — Core Language
+# Preview of Chapter 13
 
-We are now ready to study Python's basic language constructs.
+We are now ready to move from the general object model into Python's everyday value types.
 
-The next phase covers:
+Chapter 13 begins Part IV with numbers.
 
-* Numbers
-* Strings
-* Booleans
-* Operators
-* Expressions
-* Control flow
-* Functions
-* Scope
-* Closures
-* The call stack
+We will study:
+
+* Integer objects.
+* Floating-point objects.
+* Complex numbers.
+* Numeric operators.
+* Numeric immutability.
+* Identity and equality with numbers.
+* Precision, rounding, and common numeric mistakes.
 
 The important difference is that we will no longer treat these as isolated syntax rules.
 
 We will understand them as operations on objects:
 
 ```text
-expression -> object
-operator -> object behavior
-condition -> truth value of an object
-function call -> frame + names + objects
+numeric literal -> numeric object
+numeric operator -> numeric object behavior
+numeric comparison -> boolean object
 ```
 
 That is the foundation of real Python fluency.
