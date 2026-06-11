@@ -48,13 +48,61 @@ Functions
 ↓
 Data Structures
 ↓
+Custom Data Structures
+↓
+Object Lifecycle
+↓
+Modules and Imports
+↓
 Classes
+↓
+Attributes and Methods
+↓
+Dunder Methods
+↓
+Operator Overloading
+↓
+Inheritance and Method Overriding
+↓
+MRO and `super()`
+↓
+Composition
+↓
+Polymorphism
+↓
+Duck Typing
+↓
+ABCs and Mixins
+↓
+Descriptors
+↓
+Properties
 ↓
 Iterators
 ↓
+Generators
+↓
+Context Managers
+↓
+Decorators
+↓
 Concurrency
 ↓
-Internals
+CPython Object Model and Attribute Lookup
+↓
+`__slots__`
+↓
+Weak References
+↓
+Metaclasses
+↓
+Testing
+↓
+Mocking and Monkey Patching
+↓
+Static Type Checking
+↓
+Profiling
 
 ---
 

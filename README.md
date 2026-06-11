@@ -79,35 +79,44 @@ The curriculum follows strict dependency order and avoids unexplained magic.
 
 ## Volume III — Data Structures and Memory
 
-* Lists
-* Tuples
-* Dictionaries
-* Sets
-* Stack vs Heap
-* Reference Counting
-* Garbage Collection
+23. Lists
+24. Tuples
+25. Dictionaries
+26. Sets
+27. Custom Data Structures
+28. Stack vs Heap
+29. Reference Counting
+30. Garbage Collection
+31. Object Lifecycle and Weak References
 
 ---
 
 ## Volume IV — Program Organization and OOP
 
-* Modules
-* Packages
-* Imports
-* Virtual Environments
-* Classes
-* Inheritance
-* Composition
-* Polymorphism
+32. Modules
+33. Packages
+34. Imports and Namespaces
+35. Virtual Environments
+36. Classes and Instances
+37. Attributes and Methods
+38. Encapsulation and Managed Attributes
+39. Composition
+40. Inheritance and Method Overriding
+41. MRO and `super()`
+42. Polymorphism, Duck Typing, ABCs, and Mixins
 
 ---
 
 ## Volume V — Pythonic Abstractions
 
-* Iterators
-* Generators
-* Context Managers
-* Decorators
+43. Dunder Methods and the Python Data Model
+44. Operator Overloading
+45. Descriptors
+46. Properties, Static Methods, and Class Methods
+47. Iterators and Iterables
+48. Generators
+49. Context Managers
+50. Decorators
 
 ---
 
@@ -124,8 +133,13 @@ The curriculum follows strict dependency order and avoids unexplained magic.
 ## Volume VII — CPython Internals
 
 * Bytecode
-* dis module
+* `dis` module
 * Object model
+* Attribute lookup
+* Descriptor internals
+* Instance layout, `__dict__`, and `__slots__`
+* Weak references
+* Class creation and metaclasses
 * Memory model
 * Interpreter internals
 
@@ -134,8 +148,11 @@ The curriculum follows strict dependency order and avoids unexplained magic.
 ## Volume VIII — Software Engineering
 
 * Testing
+* Mocking and monkey patching
 * Logging
 * Type Hints
+* Static type checking
+* Profiling
 * Packaging
 * Linting
 * Documentation
