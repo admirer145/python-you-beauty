@@ -49,16 +49,16 @@
 21. [Scope and Namespaces](Volume-1-Foundations-and-Core-Language/Part-6-Functions/Chapter-21-Scope.md)
 22. [Closures](Volume-1-Foundations-and-Core-Language/Part-6-Functions/Chapter-22-Closures.md)
 23. [Call Stack and Stack Frames](Volume-1-Foundations-and-Core-Language/Part-6-Functions/Chapter-23-Call-Stack.md)
-24. Recursion
-25. Functional Programming
+24. [Recursion](Volume-1-Foundations-and-Core-Language/Part-6-Functions/Chapter-24-Recursion.md)
+25. [Functional Programming](Volume-1-Foundations-and-Core-Language/Part-6-Functions/Chapter-25-Functional-Programming.md)
 
 ## Part VII — Data Structures
 
-26. Lists
-27. Tuples
-28. Dictionaries
-29. Sets
-30. Comprehension Patterns
+26. [Lists](Volume-1-Foundations-and-Core-Language/Part-7-Data-Structures/Chapter-26-Lists.md)
+27. [Tuples](Volume-1-Foundations-and-Core-Language/Part-7-Data-Structures/Chapter-27-Tuples.md)
+28. [Dictionaries](Volume-1-Foundations-and-Core-Language/Part-7-Data-Structures/Chapter-28-Dictionaries.md)
+29. [Sets](Volume-1-Foundations-and-Core-Language/Part-7-Data-Structures/Chapter-29-Sets.md)
+30. [Comprehension Patterns](Volume-1-Foundations-and-Core-Language/Part-7-Data-Structures/Chapter-30-Comprehension-Patterns.md)
 31. `deque`, `heapq`, and `bisect`
 32. Custom Data Structures
 

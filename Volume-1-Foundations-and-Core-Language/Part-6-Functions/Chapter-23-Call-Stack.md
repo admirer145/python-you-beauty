@@ -1350,35 +1350,37 @@ return value or exception
 pop or unwind frame
 ```
 
-The call stack completes the function execution model for Volume I.
+The call stack explains how active function calls are organized.
 
 ---
 
-# Preview of Part VII — Data Structures
+# Preview of Chapter 24
 
-Part VI taught how Python organizes reusable behavior:
+Next we study recursion.
 
-* Functions
-* Scope
-* Closures
-* Call stack
+The call stack makes recursion understandable because each recursive call creates a new frame.
 
-Next, Part VII studies data structures:
+We will study:
 
-* Lists
-* Tuples
-* Dictionaries
-* Sets
-* Comprehension patterns
-* `deque`, `heapq`, and `bisect`
-* Custom data structures
+* What recursion is.
+* Base cases.
+* Recursive cases.
+* How recursive calls create separate frames.
+* How return values move back up the stack.
+* How to trace recursive execution.
+* Recursion with lists and nested data.
+* Recursion with trees.
+* Recursion depth and `RecursionError`.
+* Tail recursion in Python.
+* When iteration or an explicit stack is better.
 
 The transition is direct:
 
 ```text
-functions operate on objects
-objects are organized in data structures
-data structures shape how programs store and access information
+function call -> frame
+recursive call -> another frame for the same function
+base case -> stop creating frames
+return values -> move back through waiting frames
 ```
 
-We now have enough language foundation to study Python's core containers deeply.
+Recursion is the next step after understanding the call stack.
