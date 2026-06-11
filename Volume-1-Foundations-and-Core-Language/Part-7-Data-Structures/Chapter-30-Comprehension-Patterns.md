@@ -1593,13 +1593,15 @@ Comprehensions are compact collection-building loops.
 
 # Preview of Chapter 31
 
-Next we study `deque`, `heapq`, and `bisect`.
+Next we study specialized collection tools.
 
 Lists, tuples, dictionaries, sets, and comprehensions cover Python's most common built-in collection patterns.
 
 Now we will look at specialized collection tools for specific access patterns:
 
 * `deque` for efficient queue and double-ended operations.
+* `Counter` for counting.
+* `defaultdict` for grouping and default values.
 * `heapq` for priority queues.
 * `bisect` for maintaining sorted order with binary search.
 

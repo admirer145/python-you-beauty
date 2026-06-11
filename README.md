@@ -91,7 +91,7 @@ Volume I builds the complete mental model required before advanced Python feels 
 28. Dictionaries
 29. Sets
 30. Comprehension Patterns
-31. `deque`, `heapq`, and `bisect`
+31. Specialized Collections: `deque`, `Counter`, `defaultdict`, `heapq`, and `bisect`
 32. Custom Data Structures
 
 ### Part VIII — Memory Management

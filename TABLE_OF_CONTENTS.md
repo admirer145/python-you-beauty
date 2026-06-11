@@ -59,8 +59,8 @@
 28. [Dictionaries](Volume-1-Foundations-and-Core-Language/Part-7-Data-Structures/Chapter-28-Dictionaries.md)
 29. [Sets](Volume-1-Foundations-and-Core-Language/Part-7-Data-Structures/Chapter-29-Sets.md)
 30. [Comprehension Patterns](Volume-1-Foundations-and-Core-Language/Part-7-Data-Structures/Chapter-30-Comprehension-Patterns.md)
-31. `deque`, `heapq`, and `bisect`
-32. Custom Data Structures
+31. [Specialized Collections: `deque`, `Counter`, `defaultdict`, `heapq`, and `bisect`](Volume-1-Foundations-and-Core-Language/Part-7-Data-Structures/Chapter-31-Specialized-Collections.md)
+32. [Custom Data Structures](Volume-1-Foundations-and-Core-Language/Part-7-Data-Structures/Chapter-32-Custom-Data-Structures.md)
 
 ## Part VIII — Memory Management
 
