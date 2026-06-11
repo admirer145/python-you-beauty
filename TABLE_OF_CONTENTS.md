@@ -84,14 +84,14 @@
 
 ## Part I — Object-Oriented Python
 
-43. Classes and Instances
-44. Attributes and Methods
-45. Encapsulation and Managed Attributes
-46. Composition
-47. Inheritance and Method Overriding
-48. MRO and `super()`
-49. Polymorphism and Duck Typing
-50. ABCs and Mixins
+43. [Classes and Instances](Volume-2-Advanced-Python-and-Internals/Part-1-Object-Oriented-Python/Chapter-43-Classes-and-Instances.md)
+44. [Attributes and Methods](Volume-2-Advanced-Python-and-Internals/Part-1-Object-Oriented-Python/Chapter-44-Attributes-and-Methods.md)
+45. [Encapsulation and Managed Attributes](Volume-2-Advanced-Python-and-Internals/Part-1-Object-Oriented-Python/Chapter-45-Encapsulation-and-Managed-Attributes.md)
+46. [Composition](Volume-2-Advanced-Python-and-Internals/Part-1-Object-Oriented-Python/Chapter-46-Composition.md)
+47. [Inheritance and Method Overriding](Volume-2-Advanced-Python-and-Internals/Part-1-Object-Oriented-Python/Chapter-47-Inheritance-and-Method-Overriding.md)
+48. [MRO and `super()`](Volume-2-Advanced-Python-and-Internals/Part-1-Object-Oriented-Python/Chapter-48-MRO-and-super.md)
+49. [Polymorphism and Duck Typing](Volume-2-Advanced-Python-and-Internals/Part-1-Object-Oriented-Python/Chapter-49-Polymorphism-and-Duck-Typing.md)
+50. [ABCs and Mixins](Volume-2-Advanced-Python-and-Internals/Part-1-Object-Oriented-Python/Chapter-50-ABCs-and-Mixins.md)
 51. Dataclasses
 
 ## Part II — The Python Data Model
