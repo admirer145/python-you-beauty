@@ -64,11 +64,11 @@
 
 ## Part VIII — Memory Management
 
-33. Stack vs Heap
-34. Reference Counting
-35. Garbage Collection
-36. Object Lifecycle
-37. Weak References
+33. [Stack vs Heap](Volume-1-Foundations-and-Core-Language/Part-8-Memory-Management/Chapter-33-Stack-vs-Heap.md)
+34. [Reference Counting](Volume-1-Foundations-and-Core-Language/Part-8-Memory-Management/Chapter-34-Reference-Counting.md)
+35. [Garbage Collection](Volume-1-Foundations-and-Core-Language/Part-8-Memory-Management/Chapter-35-Garbage-Collection.md)
+36. [Object Lifecycle](Volume-1-Foundations-and-Core-Language/Part-8-Memory-Management/Chapter-36-Object-Lifecycle.md)
+37. [Weak References](Volume-1-Foundations-and-Core-Language/Part-8-Memory-Management/Chapter-37-Weak-References.md)
 
 ## Part IX — Modules and Imports
 
