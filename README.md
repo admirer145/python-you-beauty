@@ -1,5 +1,3 @@
-# README.md
-
 # Python Mastery
 
 > A complete first-principles journey into Python, CPython internals, software engineering, and the Python ecosystem.

@@ -1,5 +1,3 @@
-# PLAN.md
-
 # Curriculum Principles
 
 ## 1. Dependency Order
