@@ -72,11 +72,11 @@
 
 ## Part IX — Modules and Imports
 
-38. Modules
-39. Packages
-40. Import System
-41. Namespaces
-42. Virtual Environments
+38. [Modules](Volume-1-Foundations-and-Core-Language/Part-9-Modules-and-Imports/Chapter-38-Modules.md)
+39. [Packages](Volume-1-Foundations-and-Core-Language/Part-9-Modules-and-Imports/Chapter-39-Packages.md)
+40. [Import System](Volume-1-Foundations-and-Core-Language/Part-9-Modules-and-Imports/Chapter-40-Import-System.md)
+41. [Namespaces](Volume-1-Foundations-and-Core-Language/Part-9-Modules-and-Imports/Chapter-41-Namespaces.md)
+42. [Virtual Environments](Volume-1-Foundations-and-Core-Language/Part-9-Modules-and-Imports/Chapter-42-Virtual-Environments.md)
 
 ---
 
