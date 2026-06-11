@@ -32,6 +32,18 @@ Mutability
 ↓
 Equality and Memory Diagrams
 ↓
+Numbers
+↓
+Strings
+↓
+Booleans
+↓
+Operators
+↓
+Expressions
+↓
+Control Flow
+↓
 Functions
 ↓
 Data Structures

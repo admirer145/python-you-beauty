@@ -64,16 +64,16 @@ The curriculum follows strict dependency order and avoids unexplained magic.
 
 ## Volume II — Core Language
 
-* Numbers
-* Strings
-* Booleans
-* Operators
-* Expressions
-* Control Flow
-* Functions
-* Scope
-* Closures
-* Call Stack
+13. Numbers
+14. Strings
+15. Booleans
+16. Operators
+17. Expressions
+18. Control Flow
+19. Functions
+20. Scope
+21. Closures
+22. Call Stack
 
 ---
 
