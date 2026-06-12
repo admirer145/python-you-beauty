@@ -1,0 +1,12 @@
+title: Volume 1 – Foundations and Core Language
+author: Narendra Nareda
+
+fontsize: 11pt
+
+geometry:
+  - margin=1in
+
+toc: true
+numbersections: true
+
+colorlinks: true

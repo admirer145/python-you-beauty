@@ -1,10 +1,5 @@
 # Table of Contents
 
-## Front Matter
-
-* [Preface](PREFACE.md)
-* [Curriculum Principles](PLAN.md)
-
 ---
 
 # Volume I — Foundations and Core Language
@@ -92,16 +87,16 @@
 48. [MRO and `super()`](Volume-2-Advanced-Python-and-Internals/Part-1-Object-Oriented-Python/Chapter-48-MRO-and-super.md)
 49. [Polymorphism and Duck Typing](Volume-2-Advanced-Python-and-Internals/Part-1-Object-Oriented-Python/Chapter-49-Polymorphism-and-Duck-Typing.md)
 50. [ABCs and Mixins](Volume-2-Advanced-Python-and-Internals/Part-1-Object-Oriented-Python/Chapter-50-ABCs-and-Mixins.md)
-51. Dataclasses
+51. [Dataclasses](Volume-2-Advanced-Python-and-Internals/Part-1-Object-Oriented-Python/Chapter-51-Dataclasses.md)
 
 ## Part II — The Python Data Model
 
-52. Dunder Methods
-53. Operator Overloading
-54. Descriptors
-55. Properties, Static Methods, and Class Methods
-56. `__slots__`
-57. Metaclasses
+52. [Dunder Methods](Volume-2-Advanced-Python-and-Internals/Part-2-The-Python-Data-Model/Chapter-52-Dunder-Methods.md)
+53. [Operator Overloading](Volume-2-Advanced-Python-and-Internals/Part-2-The-Python-Data-Model/Chapter-53-Operator-Overloading.md)
+54. [Descriptors](Volume-2-Advanced-Python-and-Internals/Part-2-The-Python-Data-Model/Chapter-54-Descriptors.md)
+55. [Properties, Static Methods, and Class Methods](Volume-2-Advanced-Python-and-Internals/Part-2-The-Python-Data-Model/Chapter-55-Properties-Static-Methods-and-Class-Methods.md)
+56. [`__slots__`](Volume-2-Advanced-Python-and-Internals/Part-2-The-Python-Data-Model/Chapter-56-slots.md)
+57. [Metaclasses](Volume-2-Advanced-Python-and-Internals/Part-2-The-Python-Data-Model/Chapter-57-Metaclasses.md)
 
 ## Part III — Pythonic Abstractions
 
