@@ -100,47 +100,47 @@
 
 ## Part III — Pythonic Abstractions
 
-58. Iterators
-59. Generators
-60. Context Managers
-61. Decorators
+58. [Iterators](Volume-2-Advanced-Python-and-Internals/Part-3-Pythonic-Abstractions/Chapter-58-Iterators.md)
+59. [Generators](Volume-2-Advanced-Python-and-Internals/Part-3-Pythonic-Abstractions/Chapter-59-Generators.md)
+60. [Context Managers](Volume-2-Advanced-Python-and-Internals/Part-3-Pythonic-Abstractions/Chapter-60-Context-Managers.md)
+61. [Decorators](Volume-2-Advanced-Python-and-Internals/Part-3-Pythonic-Abstractions/Chapter-61-Decorators.md)
 
 ## Part IV — Robust Programs and I/O
 
-62. Exceptions
-63. Files and Serialization
-64. Standard Library Deep Dive
+62. [Exceptions](Volume-2-Advanced-Python-and-Internals/Part-4-Robust-Programs-and-IO/Chapter-62-Exceptions.md)
+63. [Files and Serialization](Volume-2-Advanced-Python-and-Internals/Part-4-Robust-Programs-and-IO/Chapter-63-Files-and-Serialization.md)
+64. [Standard Library Deep Dive](Volume-2-Advanced-Python-and-Internals/Part-4-Robust-Programs-and-IO/Chapter-64-Standard-Library-Deep-Dive.md)
 
 ## Part V — Concurrency and Parallelism
 
-65. Concurrency Foundations
-66. Threads, Processes, and the GIL
-67. Asyncio and Event Loops
+65. [Concurrency Foundations](Volume-2-Advanced-Python-and-Internals/Part-5-Concurrency-and-Parallelism/Chapter-65-Concurrency-Foundations.md)
+66. [Threads, Processes, and the GIL](Volume-2-Advanced-Python-and-Internals/Part-5-Concurrency-and-Parallelism/Chapter-66-Threads-Processes-and-the-GIL.md)
+67. [Asyncio and Event Loops](Volume-2-Advanced-Python-and-Internals/Part-5-Concurrency-and-Parallelism/Chapter-67-Asyncio-and-Event-Loops.md)
 
 ## Part VI — Type System and Internals
 
-68. Runtime Type System
-69. Bytecode Internals
-70. CPython Architecture
-71. C Extensions
+68. [Runtime Type System](Volume-2-Advanced-Python-and-Internals/Part-6-Type-System-and-Internals/Chapter-68-Runtime-Type-System.md)
+69. [Bytecode Internals](Volume-2-Advanced-Python-and-Internals/Part-6-Type-System-and-Internals/Chapter-69-Bytecode-Internals.md)
+70. [CPython Architecture](Volume-2-Advanced-Python-and-Internals/Part-6-Type-System-and-Internals/Chapter-70-CPython-Architecture.md)
+71. [C Extensions](Volume-2-Advanced-Python-and-Internals/Part-6-Type-System-and-Internals/Chapter-71-C-Extensions.md)
 
 ---
 
 # Volume III — Software Engineering
 
-72. Testing
-73. Mocking and Monkey Patching
-74. Debugging
-75. Logging
-76. Packaging
-77. Type Hints
-78. Static Type Checking
-79. Profiling
-80. Design Patterns
-81. SOLID Principles
-82. Architecture
-83. APIs
-84. Microservices
+72. [Testing](Volume-3-Software-Engineering/Chapter-72-Testing.md)
+73. [Mocking and Monkey Patching](Volume-3-Software-Engineering/Chapter-73-Mocking-and-Monkey-Patching.md)
+74. [Debugging](Volume-3-Software-Engineering/Chapter-74-Debugging.md)
+75. [Logging](Volume-3-Software-Engineering/Chapter-75-Logging.md)
+76. [Packaging](Volume-3-Software-Engineering/Chapter-76-Packaging.md)
+77. [Type Hints](Volume-3-Software-Engineering/Chapter-77-Type-Hints.md)
+78. [Static Type Checking](Volume-3-Software-Engineering/Chapter-78-Static-Type-Checking.md)
+79. [Profiling](Volume-3-Software-Engineering/Chapter-79-Profiling.md)
+80. [Design Patterns](Volume-3-Software-Engineering/Chapter-80-Design-Patterns.md)
+81. [SOLID Principles](Volume-3-Software-Engineering/Chapter-81-SOLID-Principles.md)
+82. [Architecture](Volume-3-Software-Engineering/Chapter-82-Architecture.md)
+83. [APIs](Volume-3-Software-Engineering/Chapter-83-APIs.md)
+84. [Microservices](Volume-3-Software-Engineering/Chapter-84-Microservices.md)
 
 ---
 
@@ -148,39 +148,39 @@
 
 ## Part I — Web Development
 
-85. Flask
-86. Django
-87. FastAPI
+85. [Flask](Volume-4-Ecosystem-and-Career-Paths/Part-1-Web-Development/Chapter-85-Flask.md)
+86. [Django](Volume-4-Ecosystem-and-Career-Paths/Part-1-Web-Development/Chapter-86-Django.md)
+87. [FastAPI](Volume-4-Ecosystem-and-Career-Paths/Part-1-Web-Development/Chapter-87-FastAPI.md)
 
 ## Part II — Data and Scientific Computing
 
-88. NumPy
-89. Pandas
-90. Polars
-91. SciPy
+88. [NumPy](Volume-4-Ecosystem-and-Career-Paths/Part-2-Data-and-Scientific-Computing/Chapter-88-NumPy.md)
+89. [Pandas](Volume-4-Ecosystem-and-Career-Paths/Part-2-Data-and-Scientific-Computing/Chapter-89-Pandas.md)
+90. [Polars](Volume-4-Ecosystem-and-Career-Paths/Part-2-Data-and-Scientific-Computing/Chapter-90-Polars.md)
+91. [SciPy](Volume-4-Ecosystem-and-Career-Paths/Part-2-Data-and-Scientific-Computing/Chapter-91-SciPy.md)
 
 ## Part III — Machine Learning and AI Engineering
 
-92. scikit-learn
-93. PyTorch
-94. TensorFlow
-95. AI Engineering
-96. RAG Systems
-97. Agents
+92. [scikit-learn](Volume-4-Ecosystem-and-Career-Paths/Part-3-Machine-Learning-and-AI-Engineering/Chapter-92-scikit-learn.md)
+93. [PyTorch](Volume-4-Ecosystem-and-Career-Paths/Part-3-Machine-Learning-and-AI-Engineering/Chapter-93-PyTorch.md)
+94. [TensorFlow](Volume-4-Ecosystem-and-Career-Paths/Part-3-Machine-Learning-and-AI-Engineering/Chapter-94-TensorFlow.md)
+95. [AI Engineering](Volume-4-Ecosystem-and-Career-Paths/Part-3-Machine-Learning-and-AI-Engineering/Chapter-95-AI-Engineering.md)
+96. [RAG Systems](Volume-4-Ecosystem-and-Career-Paths/Part-3-Machine-Learning-and-AI-Engineering/Chapter-96-RAG-Systems.md)
+97. [Agents](Volume-4-Ecosystem-and-Career-Paths/Part-3-Machine-Learning-and-AI-Engineering/Chapter-97-Agents.md)
 
 ## Part IV — Automation and Integration
 
-98. APIs and Automation
-99. Scripting for Real Workflows
+98. [APIs and Automation](Volume-4-Ecosystem-and-Career-Paths/Part-4-Automation-and-Integration/Chapter-98-APIs-and-Automation.md)
+99. [Scripting for Real Workflows](Volume-4-Ecosystem-and-Career-Paths/Part-4-Automation-and-Integration/Chapter-99-Scripting-for-Real-Workflows.md)
 
 ## Part V — Career Paths
 
-100. Backend Engineering
-101. Data Engineering
-102. Machine Learning Engineering
-103. AI Engineering
-104. DevOps
-105. Cybersecurity
+100. [Backend Engineering](Volume-4-Ecosystem-and-Career-Paths/Part-5-Career-Paths/Chapter-100-Backend-Engineering.md)
+101. [Data Engineering](Volume-4-Ecosystem-and-Career-Paths/Part-5-Career-Paths/Chapter-101-Data-Engineering.md)
+102. [Machine Learning Engineering](Volume-4-Ecosystem-and-Career-Paths/Part-5-Career-Paths/Chapter-102-Machine-Learning-Engineering.md)
+103. [AI Engineering](Volume-4-Ecosystem-and-Career-Paths/Part-5-Career-Paths/Chapter-103-AI-Engineering.md)
+104. [DevOps](Volume-4-Ecosystem-and-Career-Paths/Part-5-Career-Paths/Chapter-104-DevOps.md)
+105. [Cybersecurity](Volume-4-Ecosystem-and-Career-Paths/Part-5-Career-Paths/Chapter-105-Cybersecurity.md)
 
 ---
 

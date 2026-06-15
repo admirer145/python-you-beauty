@@ -167,7 +167,7 @@ Volume II moves from using Python correctly to understanding Python's advanced p
 
 ## Volume III — Software Engineering
 
-Volume III turns Python knowledge into production engineering practice.
+Volume III turns Python knowledge into production engineering practice, including testing, debugging, packaging, modern project tooling, typing, profiling, design, architecture, APIs, and microservices.
 
 72. Testing
 73. Mocking and Monkey Patching
@@ -187,7 +187,7 @@ Volume III turns Python knowledge into production engineering practice.
 
 ## Volume IV — Ecosystem and Career Paths
 
-Volume IV connects Python mastery to real-world domains, frameworks, libraries, and professional specialization paths.
+Volume IV connects Python mastery to real-world domains, frameworks, libraries, modern LLM tooling, model hubs, AI systems, automation, and professional specialization paths.
 
 ### Part I — Web Development
 

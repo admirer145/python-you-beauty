@@ -789,6 +789,106 @@ When debugging production dependency issues, the lock file is evidence.
 
 ---
 
+# Modern Project Managers and `uv`
+
+Modern Python development often uses project management tools on top of the packaging standards.
+
+The standards define concepts such as:
+
+* project metadata
+* dependencies
+* build systems
+* wheels
+* source distributions
+* virtual environments
+
+Tools make those concepts convenient in daily work.
+
+Common tools include:
+
+* `pip`
+* `venv`
+* `pip-tools`
+* `pipx`
+* Poetry
+* Hatch
+* PDM
+* `uv`
+
+The tool landscape changes over time, but the underlying questions stay stable:
+
+```text
+how do I create the project?
+how do I create the environment?
+how do I add dependencies?
+how do I lock dependencies?
+how do I run commands?
+how do I build distributions?
+how do I publish artifacts?
+```
+
+`uv` is important in modern Python because it combines several workflows that were historically handled by separate tools.
+
+It can manage projects, create virtual environments, resolve and lock dependencies, run commands, manage Python versions, run one-off tools, and provide a `pip`-compatible interface.
+
+That makes it useful for both learning and professional projects.
+
+For example, a small project workflow might be:
+
+```bash
+uv init greetings
+cd greetings
+uv add requests
+uv run python -c "import requests; print(requests.__version__)"
+uv lock
+uv sync
+```
+
+The important ideas are:
+
+```text
+uv init creates project structure
+uv add records a dependency
+uv run runs inside the project environment
+uv lock records the resolved dependency set
+uv sync makes the environment match the lock file
+```
+
+This should feel familiar after learning virtual environments, dependencies, and lock files.
+
+`uv` is not a separate universe.
+
+It is a modern tool that automates familiar packaging and environment concepts.
+
+There is also a `uv pip` interface.
+
+It can be used in workflows that still look like `pip`, `pip-tools`, or `virtualenv`:
+
+```bash
+uv venv
+uv pip install requests
+uv pip freeze
+```
+
+That interface helps teams migrate gradually.
+
+A team does not need to rewrite every workflow on day one.
+
+The professional lesson is:
+
+```text
+learn the packaging model first
+then choose tools that make the model easier to use
+```
+
+Tools change.
+
+The model remains.
+
+If you understand environments, dependency resolution, lock files, project metadata, wheels, and build systems, then `pip`, Poetry, Hatch, PDM, and `uv` become different interfaces to understandable ideas.
+
+---
+
 # Source Distribution
 
 A source distribution, or sdist, is an archive of source files and metadata.
@@ -1686,6 +1786,8 @@ Libraries usually declare compatibility ranges.
 
 Applications usually pin exact deployments.
 
+Modern project managers such as `uv`, Poetry, Hatch, and PDM help create environments, manage dependencies, lock dependency sets, run commands, and build projects while still relying on Python packaging standards.
+
 Entry points create command-line scripts and plugin hooks.
 
 Package data must be included intentionally.
@@ -1726,7 +1828,9 @@ Poor packaging makes good code hard to use.
 
 9. Compare a normal install with an editable install.
 
-10. Write a release checklist for one of your own Python projects.
+10. Create the same project with `uv init`, add one dependency with `uv add`, run a command with `uv run`, and inspect the generated lock file.
+
+11. Write a release checklist for one of your own Python projects.
 
 ---
 

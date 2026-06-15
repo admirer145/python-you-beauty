@@ -195,6 +195,263 @@ The system shape determines the model requirements.
 
 ---
 
+# Foundation Models and Standard Model Families
+
+Modern AI Engineering often begins with foundation models.
+
+A foundation model is a large, general-purpose model that can be adapted or prompted for many tasks.
+
+The phrase matters because most AI engineers are not training these models from scratch.
+
+They are building systems around them.
+
+Common foundation-model categories include:
+
+* large language models
+* embedding models
+* vision-language models
+* speech-to-text models
+* text-to-speech models
+* image generation models
+* reranking models
+* moderation models
+* code models
+* reasoning-oriented models
+
+These are not interchangeable.
+
+A language model may generate text.
+
+An embedding model turns text, images, or other inputs into vectors for search and comparison.
+
+A reranking model reorders candidate results.
+
+A moderation model detects policy-sensitive content.
+
+A speech model transcribes or generates audio.
+
+A vision-language model reasons over images and text together.
+
+A code model may be optimized for repository understanding, code generation, or tool use.
+
+An AI engineer should not think only in terms of:
+
+```text
+one smart model answers everything
+```
+
+A production system may use several models:
+
+```text
+embedding model -> retrieve documents
+reranker -> improve ordering
+language model -> generate answer
+moderation model -> inspect input or output
+speech model -> transcribe user audio
+```
+
+The useful question is:
+
+```text
+which model role does this workflow need?
+```
+
+That is different from asking which model is most popular.
+
+---
+
+# Hosted Models, Open-Weight Models, and Local Models
+
+AI engineers often choose between hosted models and open-weight models.
+
+Hosted models are accessed through APIs.
+
+The provider operates the infrastructure.
+
+The engineering team sends requests and receives responses.
+
+This can reduce operational burden.
+
+It can also introduce vendor, privacy, latency, cost, and availability considerations.
+
+Open-weight models make model weights available for download under a license.
+
+They can often be run locally, on self-managed infrastructure, or through managed inference providers.
+
+They give teams more control, but they also create more operational responsibility.
+
+Running open-weight models may require:
+
+* GPU capacity
+* quantization decisions
+* inference servers
+* batching
+* autoscaling
+* model caching
+* security patching
+* monitoring
+* cost management
+
+Hosted models may require:
+
+* API key management
+* rate-limit handling
+* request retries
+* data policy review
+* model version tracking
+* provider fallback planning
+* cost monitoring
+
+Local models may be useful when:
+
+* data cannot leave a device or network
+* latency must be very low
+* offline operation is required
+* cost at high volume favors self-hosting
+* the model is small enough for available hardware
+
+The professional choice is not ideological.
+
+It is architectural.
+
+Ask:
+
+```text
+what quality is required?
+what latency is acceptable?
+what data may leave the system?
+what budget exists?
+who operates inference?
+what happens if the provider is down?
+what license allows this use?
+how will upgrades be tested?
+```
+
+Model selection is engineering selection.
+
+---
+
+# Hugging Face and Model Hubs
+
+Hugging Face is a major part of the modern AI ecosystem.
+
+It is not just one library.
+
+It is a platform and ecosystem around models, datasets, demos, inference, and collaboration.
+
+The Hugging Face Hub hosts models, datasets, and Spaces.
+
+A model hub changes how AI engineers work.
+
+Instead of beginning from a blank training script, an engineer can search for existing models, inspect model cards, check licenses, test examples, compare tasks, download weights, and integrate with common libraries.
+
+This is powerful.
+
+It is also a responsibility.
+
+Before using a model from a hub, ask:
+
+* What task is the model designed for?
+* What data was it trained or fine-tuned on?
+* What license applies?
+* Is commercial use allowed?
+* What languages does it support?
+* What hardware does it need?
+* How large is it?
+* Does it have known limitations?
+* Does it have evaluation results?
+* Is the publisher trustworthy?
+* Is the model actively maintained?
+* Are there safety or bias concerns?
+
+A model card is not decoration.
+
+It is part of the engineering evidence.
+
+If a model has no documentation, unclear licensing, or no evaluation information, that does not automatically make it unusable.
+
+But it increases risk.
+
+The same applies to datasets.
+
+Dataset cards, licenses, provenance, privacy, and quality matter.
+
+AI Engineering is not only choosing a model that works once.
+
+It is choosing artifacts that can be justified, reproduced, and operated.
+
+---
+
+# Transformers
+
+Hugging Face Transformers is one of the central Python libraries for working with pretrained transformer models.
+
+It supports models across text, computer vision, audio, video, and multimodal tasks.
+
+It provides high-level APIs for inference and training while also exposing lower-level model, tokenizer, processor, and generation interfaces.
+
+A beginner may first meet it through a pipeline:
+
+```python
+from transformers import pipeline
+
+classifier = pipeline("sentiment-analysis")
+
+result = classifier("Python packaging finally makes sense.")
+
+print(result)
+```
+
+A pipeline hides many details:
+
+* model loading
+* tokenizer or preprocessor loading
+* input preparation
+* inference
+* output postprocessing
+
+That is useful for exploration.
+
+Professional work eventually needs deeper understanding.
+
+You may need to know:
+
+* which model checkpoint is loaded
+* which tokenizer is used
+* how inputs are truncated
+* how generation parameters affect output
+* how batching affects latency
+* whether inference runs on CPU or GPU
+* whether the model license allows the product use
+* how the model is versioned
+* how to test model upgrades
+
+Transformers is not only for LLM chat.
+
+It is also used for:
+
+* text classification
+* named entity recognition
+* translation
+* summarization
+* question answering
+* image classification
+* object detection
+* automatic speech recognition
+* multimodal models
+
+For this book, the point is not to memorize one library's API.
+
+The point is to understand the modern model workflow:
+
+```text
+find model -> inspect documentation -> load model -> run inference -> evaluate behavior -> integrate responsibly
+```
+
+That workflow appears whether you use hosted APIs, open-weight models, or internal model registries.
+
+---
+
 # Model APIs
 
 Many modern AI applications use model APIs.
@@ -1430,13 +1687,15 @@ It is how AI features become reliable software.
 
 AI Engineering is the discipline of building dependable systems around AI models.
 
-It includes prompts, context, retrieval, structured outputs, tool use, agents, evaluation, observability, latency, cost, safety, security, privacy, product design, deployment, and continuous improvement.
+It includes foundation models, hosted models, open-weight models, model hubs, prompts, context, retrieval, structured outputs, tool use, agents, evaluation, observability, latency, cost, safety, security, privacy, product design, deployment, and continuous improvement.
 
 The model is only one component.
 
 Reliable AI systems require architecture around the model.
 
 Prompts matter, but context engineering matters more as systems grow.
+
+Hugging Face and Transformers matter because modern AI engineers often evaluate, load, adapt, and operate pretrained models rather than training everything from scratch.
 
 Structured outputs make model behavior easier to validate.
 
@@ -1486,21 +1745,23 @@ That is the difference between a clever prototype and a professional product.
 
 12. Decide which fields should not be logged for privacy reasons.
 
-13. Compare two model choices using quality, latency, and cost.
+13. Compare two model choices using quality, latency, cost, licensing, and deployment constraints.
 
-14. Design a least-privilege tool permission model for an agent.
+14. Pick one model from a model hub and inspect its model card, license, intended task, limitations, and hardware requirements.
 
-15. Add a human approval step for a sensitive action.
+15. Design a least-privilege tool permission model for an agent.
 
-16. Create a rollout plan for an AI feature moving from internal testing to production.
+16. Add a human approval step for a sensitive action.
 
-17. Define a rollback plan if quality regresses.
+17. Create a rollout plan for an AI feature moving from internal testing to production.
 
-18. Create a cost budget and alerting strategy.
+18. Define a rollback plan if quality regresses.
 
-19. Identify a prompt injection risk in a RAG system and propose mitigations.
+19. Create a cost budget and alerting strategy.
 
-20. Decide whether a problem should be solved with prompting, retrieval, fine-tuning, or product design.
+20. Identify a prompt injection risk in a RAG system and propose mitigations.
+
+21. Decide whether a problem should be solved with prompting, retrieval, fine-tuning, hosted inference, open-weight deployment, or product design.
 
 ---
 
@@ -1508,7 +1769,7 @@ That is the difference between a clever prototype and a professional product.
 
 Chapter 95 studied AI Engineering.
 
-We learned how model APIs, prompts, context engineering, structured outputs, retrieval, embeddings, tool use, agents, evaluation, observability, latency, cost, model selection, safety, security, privacy, product design, deployment, and feedback loops fit together in real AI systems.
+We learned how foundation models, hosted models, open-weight models, model hubs, Transformers, model APIs, prompts, context engineering, structured outputs, retrieval, embeddings, tool use, agents, evaluation, observability, latency, cost, model selection, safety, security, privacy, product design, deployment, and feedback loops fit together in real AI systems.
 
 Next we study RAG Systems in depth.
 
