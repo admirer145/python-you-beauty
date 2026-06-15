@@ -10,3 +10,13 @@ toc: true
 numbersections: true
 
 colorlinks: true
+
+top-level-division: chapter
+
+header-includes:
+  - |
+    \usepackage{fvextra}
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{
+      breaklines,
+      breakanywhere=true
+    }

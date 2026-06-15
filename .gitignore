@@ -1,0 +1,4 @@
+*.pdf
+*.tex
+*.yaml
+.DS_Store
